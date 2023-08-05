@@ -1,0 +1,102 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  color: #781e27;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0%;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 40%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.3) ;
+  color:white;
+}
+
+.carousel-inner {
+margin: auto;
+align-items: center;
+align-content: center;
+}
+
+/* Declare heights because of positioning of img element */
+/*.carousel-item {
+  height: 70rem;
+  background-color: #781e27;
+
+}*/
+.carousel-item > img {
+/*  position: absolute;*/
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 36rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption {
+    margin-bottom: 8rem;
+    font-size: 6rem;
+    line-height: 1.4;
+    z-index: 20;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}

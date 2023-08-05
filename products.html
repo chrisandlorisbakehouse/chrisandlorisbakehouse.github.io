@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Offering comfort in the form of scones and cookies.">
+    <meta name="author" content="Chris & Lori's Bakehouse">
+    <meta property="og:title" content="Chris & Lori's Bakehouse: Products">
+    <meta property="og:image" content="../assets/img/semicranberry.jpg">
+    <meta property="image" content="../assets/img/semicranberry.jpg">
+    <meta property="og:description" content="Offering comfort in the form of scones and cookies.">
+<!--     <meta property="og:url" content="https://example.com/page.html"> -->
+    <meta name="twitter:card" content="../assets/img/semicranberry.jpg">
+    <link rel="icon" href="../assets/img/semicranberry.jpg">
+    <title>Chris & Lori's Bakehouse</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat|Kalam:300|Quicksand|Permanent+Marker" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<style>
+* {box-sizing: border-box;}
+
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  color: black;
+  font-family:  'Quicksand', sans-serif;
+  font-size: 1.7rem;
+  padding: 10px;
+  margin: 10px;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: white; 
+}
+tr:nth-of-type(even) { 
+  background: lightgrey; 
+}
+th { 
+background: white; 
+  color: black; 
+/*  font-weight: bold;*/
+/*  font-family: 'Permanent Marker', sans-serif;*/
+}
+td, th { 
+  padding: 3px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+.container {
+  position: relative;
+  width: 90%;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  right:0;
+  top:0;
+  background: rgb(0, 0, 0);
+  background: rgba(255,255,255, 0.6); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 0px;
+  text-align: center;
+}
+
+.scone:hover .overlay {
+  opacity: 1;
+}
+
+.category {
+  background-color: lightgrey;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+  color: black;
+  font-size: 1.6em;
+}
+
+.productnames {
+/*font-family: 'Permanent Marker', sans-serif;*/
+font-family: 'Quicksand', sans-serif;
+font-weight: bold;
+font-style: normal;
+}
+
+.producttext {
+/*font-family: 'Permanent Marker', sans-serif;*/
+font-family: 'Quicksand', sans-serif;
+font-style: normal;
+color:black;
+font-size: 1.2em;
+} 
+.ingredients {
+  font-size: 12pt;
+}
+
+.details {
+  background-color: lightgrey;
+  left: 100px;
+  padding: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+p {
+font-size: 1.4rem;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+
+
+</style>
+     <nav class="navbar navbar-toggleable-sm bg-light">
+         <!-- Create the navbar -->
+         <div class="navbar-header">
+            <!-- Create the navbar -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-menu-hamburger"></span><span class="mobile-menu">Menu</span>
+            </button> <!-- Hamburger button for smaller devices -->
+            <a href="index.html" class="navbar-left navbar-brand"><img src="./assets/icon/hat.png"></a> <!-- Brand -->
+         </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div id="navbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link active" href="index.html">Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Farmer's Markets</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                     <a class="dropdown-item" href="DCFM.html">
+                        <p class = "dropdowntext">Dane County Farmer's Market</p>
+                     </a>
+                     <a class="dropdown-item" href="WCM.html">
+                        <p class = "dropdowntext">Westside Community Market</p>
+                     </a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/products.html">Products</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+               </li>
+<!--                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">Contact</a>
+               </li> -->
+            </ul>
+         </div>
+         <!--/.navbar-collapse -->
+      </nav>
+  </head>
+  <body>
+
+<div style="background-color:white;padding:1%">
+<hr>
+  <h1 class = "pagetitle" align="center">Products</h1>
+<hr>
+  <h1 style = "font-size:1.1em;color:black;" align="center"></h1>
+</div>
+
+<div class = "container">
+  <h3 class="producttext">Some of these products are seasonal and are not available at all times.</h3>
+  <h2 class="category" align="center">Healthy Schmealthy</h2>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/1_sconut_cinnamon.jpg" alt="Sconuts" class="image">
+  <h3 class="productnames">Cinnamon Chip Sconuts</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, cinnamon chips, butter, brown sugar, egg, water, vanilla, baking powder, ground cinnamon, and salt. </p>
+</div>
+
+<!-- <div class="container scone col-md-4">
+  <img src="../assets/img/1_sconut_lemon.jpg" alt="Sconuts" class="image">
+  <h3 class="productnames">Lemon White Chocolate Chip Sconuts</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, white chocolate chips, butter, brown sugar, egg, water, lemonade concentrate, vanilla, baking powder, and salt. </p>
+</div> -->
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/1_sconut_chocolate.jpg" alt="Sconuts" class="image">
+  <h3 class="productnames">Chocolate Chip Sconuts</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, chocolate chips, butter, brown sugar, egg, water, vanilla, baking powder, almond extract, and salt. </p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/1_cookie_flower.jpg" alt="Flower Cookies" class="image">
+    <h3 class="productnames">Flower Cookies</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, sugar, butter, margarine, egg, vanilla, and baking soda. </p>
+</div>
+</div>
+
+<div class = "container">
+
+
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/1_cookie_cow.jpg" alt="Cow Cookies" class="image">
+    <h3 class="productnames">Cow Cookies</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  white flour, sugar, butter, margarine, egg, vanilla, and baking soda. </p>
+</div>
+</div>
+
+
+
+<!-- START SLIGHTLY HEALTHY ROW 1 -->
+<div class = "container">
+    <h2 class="category" align="center">Slightly Healthy</h2>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/2_espresso.jpg" alt="Espresso Dark Chocolate" class="image">
+  <h3 class="productnames">Espresso Dark Chocolate Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  white flour, dark chocolate chunks, butter*, brewed coffee, eggs, vanilla, granulated sugar, baking powder, ground fair trade coffee beans, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. (*no trans fats)</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/2_coconut.jpg" alt="Coconut Dark Chocolate" class="image">
+  <h3 class="productnames">Coconut Dark Chocolate Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  white flour, dark chocolate chunks, shredded toasted coconut, butter*, water, eggs, coconut extract, granulated sugar, water, baking powder, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. (*no trans fats)</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/2_whitechocrasp.jpg" alt="White Chocolate Raspberry" class="image">
+    <h3 class="productnames">White Chocolate Raspberry Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, white chocolate chunks, raspberries, butter*, water, eggs, granulated sugar, water, baking powder, almond extract, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. (*no trans fats)</p>
+</div>
+
+
+
+</div>
+</div>
+<!-- END SLIGHTLY HEALTHY ROW 1 -->
+
+
+<!-- START SLIGHTLY HEALTHY ROW 2 -->
+<div class = "container">
+<div class="container scone col-md-4">
+  <img src="../assets/img/2_vanalmond.jpg" alt="Vanilla Almond" class="image">
+  <h3 class="productnames">Vanilla Almond Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  white flour, water, butter*, eggs, pure vanilla, almond extract, sliced almonds, granulated sugar, baking powder, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. (*no trans fats) </p>
+</div>
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/2_pumpkinmuffin.jpg" alt="Pumpkin Muffins" class="image">
+  <h3 class="productnames">Pumpkin Cream Cheese Muffins <i style="color:grey">(Seasonal)</i></h3>
+  <p class = "ingredients"><b> Ingredients:</b> sugar, white flour, oil, pumpkin, cream cheese, baking powder, ground cinnamon, baking soda, and salt. </p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/2_pumpkincookies.jpg" alt="Pumpkin Muffins" class="image">
+  <h3 class="productnames">Pumpkin Spice Cookies <i style="color:grey">(Seasonal)</i></h3>
+  <p class = "ingredients"><b> Ingredients:</b> bleached malted enriched flour, pumpkin, sugar, butter, eggs, baking soda, baking powder, vanilla, pumpkin spice (cinnamon, mace, allspice, nutmeg, ginger, cloves), salt. <br><b> Frosting:</b> powdered sugar, shelf stable cream cheese, butter, brown sugar. </p>
+</div>
+
+
+</div>
+
+
+<!-- START SEMI HEALTHY ROW 1 -->
+<div class = "container">
+<h2 class="category" align="center">Semi Healthy</h2>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/3_cinnamon.jpg" alt="Cinnamon" class="image">
+  <h3 class="productnames">Cinnamon Oat Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, oats, butter*, water, cinnamon chips, brown sugar, ground cinnamon, baking powder, and salt. 
+  <b>Glaze:</b> Water, corn syrup, and powdered sugar. (*no trans fats)</p>
+</div>
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/3_blueberry.jpg" alt="Blueberry" class="image">
+  <h3 class="productnames">Blueberry Oat Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, oats, butter*, blueberries, water, brown sugar, baking powder, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. </p>
+  <p>*no trans fats</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/3_cranberry.jpg" alt="Cranberry" class="image">
+  <h3 class="productnames">Cranberry Oat Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  white flour, cranberries, oats, butter*, water, brown sugar, baking powder, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. (*no trans fats)</p>
+</div>
+
+
+</div>
+
+<!-- END SEMI HEALTHY ROW 1 -->
+
+<!-- START SEMI HEALTHY ROW 2 -->
+<div class = "container">
+  
+<div class="container scone col-md-4">
+  <img src="../assets/img/rhubarb.png" alt="Rhubarb" class="image">
+  <h3 class="productnames">Rhubarb Oat Scones <i style="color:grey">(Seasonal)</i></h3>
+   <p class = "ingredients"><b>Ingredients:</b> white flour, rhubarb, oats, butter*, water, brown sugar, baking powder, and salt.
+  <b><b>Glaze:</b></b> water, corn syrup, powdered sugar. (*no trans fats)</p>
+  </div>
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/3_bananachocolate.jpg" alt="Banana Chocolate" class="image">
+  <h3 class="productnames">Banana Chocolate Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, bananas, oats, butter*, dark chocolate chunks, brown sugar, baking powder, and salt.
+  <b>Glaze:</b> water, corn syrup, and powdered sugar. (*no trans fats)</p>
+</div>
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/3_applecinn.jpg" alt="Apple Cinnamon" class="image">
+  
+  <h3 class="productnames">Apple Cinnamon Oat Scones <i style="color:grey">(Seasonal)</i></h3>
+  <p class = "ingredients"><b>Ingredients:</b> white flour, oats, apples, butter*, apple cider, brown sugar, ground cinnamon, baking powder, and salt.
+  <b>Glaze:</b> Water, corn syrup, powdered sugar. (*no trans fats)</p>
+</div>
+
+</div>
+
+<!-- END SEMI HEALTHY ROW 2 -->
+
+
+<!-- START VERY HEALTHY ROW 1 -->
+<div class = "container">
+  <h2 class="category" align="center">Very Healthy</h2>
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/4_wg_raspberry.jpg" alt="WG Raspberry" class="image">
+  <h3 class="productnames">Whole Grain Raspberry Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  whole wheat flour, raspberries, oatmeal, butter*, water, honey, baking powder, and salt. (*no trans fats)</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/4_wg_chocolate.jpg" alt="WG Chocolate" class="image">
+  <h3 class="productnames">Whole Grain Dark Chocolate Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  whole wheat flour, dark chocolate chunks, oats, butter*, water, raw honey, baking powder, and salt. (*no trans fats)</p>
+</div>
+
+<!-- <div class="container scone col-md-4">
+  <img src="../assets/img/bananawalnut.jpg" alt="Banana Walnut" class="image">
+  <h3 class="productnames">Whole Grain Banana Walnut Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  whole wheat flour, bananas, oatmeal, butter*, water, walnuts, honey, baking powder, banana extract, and salt. (*no trans fats)</p>
+  </br>
+</br>
+</div> -->
+
+<div class="container scone col-md-4">
+	  <img src="../assets/img/wgpumpkin.jpg" alt="WG Pumpkin" class="image">
+	  <h3 class="productnames">Whole Grain Pumpkin Scones <i style="color:grey">(Seasonal)</i></h3>
+	  <p class = "ingredients">Ingredients: whole wheat flour, pumpkin, oats, butter*, water, raw honey, baking powder, pumpkin spice, salt, and cinnamon. (*no trans fats) </p>
+</div>
+</div>
+
+
+<!-- START ULTRA HEALTHY ROW 1 -->
+<div class = "container">
+  <h2 class="category" align="center">Ultra Healthy</h2>
+
+<div class="container scone col-md-4">
+    <img src="../assets/img/5_wg_blueberry.jpg" alt="WG Blueberry" class="image">
+  <h3 class="productnames">Whole Grain Vegan Blueberry Oat Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  whole wheat flour, blueberries, oats, coconut oil*, water, pure maple syrup, baking powder, ground flax seed, and salt. (*no trans fats)</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/5_wg_cranberryorange.jpg" alt="WG Cranberry Orange" class="image">
+  <h3 class="productnames">Whole Grain Vegan Cranberry Orange Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  whole wheat flour, cranberries, oats, coconut oil*, water, pure maple syrup, orange juice, baking powder, ground flax seed, orange peel, and salt. (*no trans fats)</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/5_wg_carrotraisin.jpg" alt="WG Carrot" class="image">
+  <h3 class="productnames">Whole Grain Vegan Carrot Raisin Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  whole wheat flour, carrots, oats, raisins, coconut oil*, water, pure maple syrup, baking powder, ground flax seed, ground cinnamon, and salt. (*no trans fats)</p>
+</div>
+
+</div> 
+<!-- END ULTRAS -->
+
+<!-- START GLUTEN FREE ROW 1 -->
+<div class = "container">
+  <h2 class = "category" align="center">Gluten Free & Vegan</h2>
+
+
+  <!-- BANANA BLUEBERRY -->
+<div class="container scone col-md-4">
+  <img src="../assets/img/6_gf_blueberry.jpg" alt="GF Banana Blueberry" class="image">
+  <h3 class="productnames">Gluten Free Vegan Banana Blueberry Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  Gluten free flour blend (brown rice, rice starch, sorghum, buckwheat, millet, potato starch, flaxseed meal, xanthan gum, locust bean gum, whole quinoa), blueberries, bananas, coconut oil, brown sugar, baking powder, banana extract, and salt. 
+</p>
+</div>
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/6_gf_raspberry.jpg" alt="GF Raspberry" class="image">
+  <h3 class = "productnames">Gluten Free Vegan Raspberry Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  Gluten free flour blend (brown rice, rice starch, sorghum, buckwheat, millet, potato starch, flaxseed meal, xanthan gum, locust bean gum, whole quinoa), raspberries, coconut oil, brown sugar, baking powder, almond extract, and salt. 
+</p>
+</div>
+
+<!-- GF MOCHA -->
+<div class="container scone col-md-4">
+  <img src="../assets/img/6_gf_mocha.jpg" alt="GF Mocha" class="image">
+  <h3 class="productnames">Gluten Free Vegan Mocha Scones</h3>
+  <p class = "ingredients"><b>Ingredients:</b>  Gluten free flour blend (brown rice, rice starch, sorghum, buckwheat, millet, potato starch, flaxseed meal, xanthan gum, locust bean gum, whole quinoa), dairy free chocolate chips, coconut oil, brown sugar, pure vanilla, coconut extract, coffee extract, cocoa powder, ground coffee beans, baking powder, and salt. </p>
+</div>
+
+
+</div> 
+
+
+<!-- START GLUTEN FREE ROW 2 -->
+<div class = "container">
+
+<!-- GF SF APPLE CINNAMON -->
+<!-- <div class="container scone col-md-4">
+  <img src="../assets/img/gfapplecinn.jpg" alt="WG Pumpkin" class="image">
+  <h3 class = "productnames">Gluten Free, Sugar Free, Vegan Apple Cinnamon Scones <i style="color:grey">(Seasonal)</i></h3>
+  <p class = "ingredients"><b>Ingredients:</b>  Gluten free flour blend (brown rice, rice starch, sorghum, buckwheat, millet, potato starch, flaxseed meal, xanthan gum, locust bean gum, whole quinoa), apples, ground cinnamon, coconut oil, natural sugar free sweeteners (erythritol and stevia), baking powder, and salt. </p>
+</div> -->
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/gfpumpkin.jpg" alt="GF Pumpkin" class="image">
+  <h3 class = "productnames">Gluten Free Vegan Pumpkin Scones <i style="color:grey">(Seasonal)</i></h3>
+  <p class = "ingredients"><b>Ingredients:</b>  Gluten free flour blend (brown rice, rice starch, sorghum, buckwheat, millet, potato starch, flaxseed meal, xanthan gum, locust bean gum, whole quinoa), pumpkin purée, coconut oil, brown sugar, baking powder, pumpkin spice blend, and salt. 
+</p>
+</div>
+
+</div>
+
+</div>
+<!-- END GLUTEN FREE ROW 2 -->
+
+
+<!-- <div class = "container">
+  <h2 class = "category" align="center">Keto</h2>
+  <div class="block_1"> </div> <hr />
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/ketopb.jpg" alt="Keto Peanut Butter" class="image">
+  
+  <h3 class="productnames">Keto Peanut Butter Cookies</h3>
+  <p class = "ingredients"><b>Ingredients:</b> natural peanut butter (peanuts, salt), erythritol (sugar free natural sweetener), and egg.</p>
+  <p>gluten free, sugar free, keto, low carb</p>
+</div>
+
+
+<div class="container scone col-md-4">
+  <img src="../assets/img/ketoalmondshortbread.jpg" alt="Keto Almond Shortbread" class="image">
+  
+  <h3 class = "productnames">Keto Almond Shortbread Cookies</h3>
+  <p class = "ingredients"><b>Ingredients:</b> almond flour, erythritol (sugar free natural sweetener), butter, sliced almonds, almond extract, and pure vanilla. </p>
+  <p>gluten free, sugar free, keto, low carb</p>
+</div>
+</div> -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+
+      <!-- FOOTER -->
+  <div class = "footer">
+    <h5>
+<!--       <a href="https://m.me/198694783507805"> <i class="fab fa-facebook-messenger fa-lg"></i></a> -->
+      <a href="https://www.facebook.com/Chris-Loris-Bakehouse-198694783507805/"> <i class="fab fa-facebook fa-lg"></i></a>
+      <a href="https://www.instagram.com/chrisandlorisbakehouse/"> <i class="fab fa-instagram fa-lg"></i></a>
+    </h5>
+    <h5>&copy; 2022 Chris & Lori's Bakehouse.</h5>
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</html>
