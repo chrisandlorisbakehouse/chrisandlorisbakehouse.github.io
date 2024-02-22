@@ -1,82 +1,99 @@
-
-.carousel-control-prev {
-  top: 20%;
-  height: 30%;
+/* Reset some default styles */
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #781e27;
+  border-radius: 0;
+}
+
+.navbar-brand img {
+  width: 25%;
+  height: auto;
+  display: block;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.navbar-nav .nav-item.dropdown:hover > a,
+.navbar-nav .nav-item.dropdown:hover > a:hover,
+.navbar-nav .nav-item.dropdown:hover > a:focus {
+  background-color: pink;
+  color: green;
+}
+
+.dropdown-menu {
+  padding: 2%;
+  z-index: 2000;
+}
+
+/* Carousel styles */
+.carousel-control-prev,
 .carousel-control-next {
   top: 20%;
   height: 30%;
 }
 
-
-/*CAROUSEL MESSAGES OFF FOR WINTER 21-22*/
 .carousel-caption {
   background-color: #1D0300;
   border-radius: 12px;
-
 }
+
 .carousel-message {
   font-family: 'Coustard', serif;
-  font-size: 2rem; 
-  color:white;
-  align-content: center;
-}
-
-@media (min-width: 100px) {
-  .carousel-message {
-  font-family: 'Coustard', serif;
-  font-size: 1.5rem; 
-  color:white;
-  margin-left: 10px;
-}
+  color: white;
 }
 
 @media (min-width: 576px) {
   .carousel-message {
-  font-family: 'Coustard', serif;
-  font-size: 2.3rem; 
-  color:white;
-
-}
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .carousel-message {
-  font-family: 'Coustard', serif;
-  font-size: 2.6rem; 
-  color:white;
-}
+    font-size: 2.6rem;
+  }
 }
 
 @media (min-width: 992px) {
   .carousel-message {
-  font-family: 'Coustard', serif;
-  font-size: 3rem; 
-  color:white;
-
-}
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .carousel-message {
-  font-family: 'Coustard', serif;
-  font-size: 5rem; 
-  color:white;
-}
+    font-size: 5rem;
+  }
 }
 
-.fab {
-color:white;
-text-decoration: none;
-}
-
-.fab:hover {
-  color:#ceb0a3;
-  text-decoration: none;
-}
-
-/*download button*/
+/* Button styles */
 .btn {
   background-color: #781e27;
   border: none;
@@ -85,7 +102,7 @@ text-decoration: none;
   cursor: pointer;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 2%;  
+  margin-bottom: 2%;
   font-family: Quicksand, sans-serif;
   box-shadow: 1px 1px #2a2a2a;
 }
@@ -93,83 +110,33 @@ text-decoration: none;
 .btn:hover {
   background-color: #ceb0a3;
   color: white;
-  font-family: Quicksand, sans-serif;
 }
 
-a:focus, a:hover {
-    color: #ceb0a3;
-}
+/* Footer styles */
 
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: pink;
-    color: green;
-}
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu {
-  padding: 2%;
-  z-index: 2000;
-}
-
-.dropdowntext {
-  font-size: 12pt
-}
-
-
-body {
-  background-color: #781e27;
-/*  position: relative;*/
-  margin: 0;
-  padding-bottom: 60px;
-/*  min-height: 100%;*/
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-main {
-    background-color: #1D0300;
-    text-align: center;
+.footer {
+    background-color: #781e27;
     color: white;
+    text-align: center;
+    padding: 1.5%;
 }
 
 
-li {
-	display: inline-block;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-p {
-  font-size: 4rem;
+/* Responsive text styles */
+h1, h2, h3, h4, p {
   font-family: 'Quicksand', sans-serif;
 }
-
-/* mouse over link */
-a:hover {
-    color: #ceb0a3;
-}
-
 
 h1 {
-  font-family: 'Quicksand', sans-serif;
   font-size: 6rem;
 }
 
 h2 {
-  font-family: 'Quicksand', sans-serif;
   color: #781e27;
 }
 
 h3 {
   color: #781e27;
-  font-family:  'Quicksand', sans-serif;
   font-size: 2rem;
 }
 
@@ -180,193 +147,14 @@ h4 {
   margin: 10px;
 }
 
-.nav-link {
-  color: white;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2rem;
-  margin: 20px;
-}
-
-a .table {
-  text-decoration: underline;
-
-}
-
-hr { 
-  width:90%; 
-  height:2px; 
-  background: #fff 
-}
-
-.navbar {
-  background-color: #781e27;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 0px;
-}
-
-.navbar-header {
-  height: 8rem;
-}
-
-.navbar-brand img {
-  padding-bottom: 0%;
-  width: 33%;
-}
-
-.navbar-left {
-  margin: 0%;
-  margin-bottom: 0%
-}
-
-.mobile-menu {
-  font-family: 'Quicksand', sans-serif;
-  padding: 9%;
-}
-
-.dropdown-item {
-  background-color: white;
-  padding: 3px;
-  margin: 0px;
-}
-
 .pagetitle {
   font-family: 'Coustard', serif;
   margin: 1%;
-}
-
-.carousel-product-name {
-  font-family: 'Coustard', serif;
-  font-size: 3rem; 
-}
-
-#myCarousel {
-  background-color: #1D0300;
-/*  padding-right: 2%;
-  padding-left: 2%;*/
-  align-self: center;
-  height: 100%;
-}
-
-.button {
-  padding: 2px 2px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #781e27;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 2px 5px #999;
-}
-
-.button:hover {
-  background-color: #781e27;
-  transform: translateY(2px);
-  box-shadow: 0 3px #999;
-}
-
-.button:active {
-  background-color: #781e27;
-  box-shadow: 0 3px #999;
-  transform: translateY(4px);
-}
-
-span {
-  color: white;
-}
-
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  background-color: white;
-  margin-top: 0px;
-}
-
-.homepage {
-  background-color: #1D0300;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height:100px;
-  line-height:60px;
-  color: white;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1.5%;
-  background-color: #1D0300;
-  text-align: right;
-  font-size: 18pt;
-  width:100%;
-  font-family: 'Quicksand', sans-serif;
-  display: inline-block;
-}
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-/*#pixlee_container {
-margin-bottom: 15%;
-display: inline-block;
-}*/
-
-/*body > .container {
-  padding: 60px 15px 0;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}*/
-
-code {
-  font-size: 80%;
-}
-
-#logo {
-	width: 100px;
-	height: 100px;
-}
-
-.logo {
-	width: 400px;
-	height: 400px;
-}
-
-
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: red;
-  color: white;
-  margin-bottom: 15px;
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 33px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
   color: black;
+}
+
+/* Responsive image styles */
+img {
+  max-width: 100%;
+  height: auto;
 }

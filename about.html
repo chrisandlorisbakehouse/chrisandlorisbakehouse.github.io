@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,10 +12,10 @@
 
     <script src="https://kit.fontawesome.com/d910c30dc1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat|Kalam:300|Quicksand|Permanent+Marker" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat|Kalam:300|Quicksand|Permanent+Marker" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,151 +24,99 @@
     <link href="../css/style.css" rel="stylesheet">
 
 <style>
-* {box-sizing: border-box;}
 
-.container {
-  position: relative;
-  width: 90%;
-/*  max-width: 300px;*/
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: auto;
-}
+  .navbar {
+    background-color: #781e27;
+  }
+        * {
+            box-sizing: border-box;
+        }
 
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  left: 0;
-  right:0;
-  top:0;
-  background: rgb(0, 0, 0);
-  background: rgba(255,255,255, 0.6); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 0px;
-  text-align: center;
-}
+        .container {
+            position: relative;
+            width: 90%;
+            /* max-width: 300px;*/
+        }
 
-.scone:hover .overlay {
-  opacity: 1;
-}
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
 
-.details {
-  left: 100px;
-  padding: 3%;
-  margin-left: 8%;
-  margin-right: 8%;
-  color:black;
-}
+        .details {
+            left: 100px;
+            padding: 3%;
+            margin-left: 8%;
+            margin-right: 8%;
+            color: black;
+        }
 
+        p {
+            font-size: 2rem;
+            margin: 2%;
+        }
 
-p {
-font-size: 2rem;
-margin: 2%;
-}
+        a {
+            color: black;
+        }
 
-a {
-  color: black;
-}
+        .footer .fab {
+            color: white;
+        }
+    </style>
 
-</style>
+</head>
 
-  </head>
-  <body>
+<body>
 
-     <nav class="navbar navbar-toggleable-sm bg-light">
-         <!-- Create the navbar -->
-         <div class="navbar-header">
-            <!-- Create the navbar -->
+    <nav class="navbar navbar-toggleable-sm bg-light">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="glyphicon glyphicon-menu-hamburger"></span><span class="mobile-menu">Menu</span>
-            </button> <!-- Hamburger button for smaller devices -->
-            <a href="index.html" class="navbar-left navbar-brand"><img src="./assets/icon/hat.png"></a> <!-- Brand -->
-         </div>
-         <!-- Collect the nav links, forms, and other content for toggling -->
-         <div id="navbar" class="collapse navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-menu-hamburger"></span><span class="mobile-menu">Menu</span>
+            </button>
+            <a href="index.html" class="navbar-left navbar-brand"><img src="./assets/icon/hat.png"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                  <a class="nav-link active" href="index.html">Home</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Farmers' Markets</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown01">
-                     <a class="dropdown-item" href="DCFM.html">
-                        <p class = "dropdowntext">Dane County Farmers' Market</p>
-                     </a>
-                     <a class="dropdown-item" href="WCM.html">
-                        <p class = "dropdowntext">Westside Community Market</p>
-                     </a>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/products.html">Products</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/about.html">About</a>
-               </li>
-               <li class="nav-item active">
-                  <a class="nav-link active" href="contact.html">Contact</a>
-               </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
             </ul>
-         </div>
-         <!--/.navbar-collapse -->
-      </nav>
+        </div>
+    </nav>
 
-<hr>
-    <h1 class = "pagetitle" align="center">About the Bakehouse</h1>
-<hr>
-<container>
+    <h1 class="pagetitle" align="center">About the Bakehouse</h1>
+    <container>
+        <p align="left" class="details">Chris & Lori's Bakehouse began as a bakery and cafe serving breakfast and lunch in DeForest in 1995. In 1996, we decided to try selling at the Dane County Farmer's Market. Every Saturday morning we brought a small amount of product, a little card table, and our then 6-year-old daughter to the market. Four years later, another daughter was born on a Saturday morning (one of the few markets we've missed), and she started coming with us to the market the following Saturday. <br> <br> Since our humble beginnings, our farmers' market stand has grown to offer several different types of scones, ranging from "very healthy" to "slightly healthy" - and of course, cow and flower-shaped sugar cookies in the "healthy schmealthy" category. We also offer dairy free and gluten free scones. <br> <br> Chris, Lori, Natalee, and Marinda <br> <br> <img src="../assets/img/family.jpg" alt="The Robson Family" style="width:600px;" align="center" class="image map"> </p> <br> <br> </container>
 
+        <!-- FOOTER -->
+        <div class="footer">
+            <h5>
+                <a href="https://www.facebook.com/Chris-Loris-Bakehouse-198694783507805/"><i class="fab fa-facebook fa-lg"></i></a>
+            </h5>
+            <h5>&copy; 2024 Chris & Lori's Bakehouse.</h5>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')
+        </script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+</body>
 
-
-
-<p align="left" class="details"> Chris & Lori's Bakehouse began as a bakery and cafe serving breakfast and lunch in DeForest in 1995. In 1996, we decided to try selling at the Dane County Farmer's Market. Every Saturday morning we brought a small amount of product, a little card table, and our then 6-year-old daughter to the market. Four years later, another daughter was born on a Saturday morning (one of the few markets we've missed), and she started coming with us to the market the following Saturday.
-</br>
-</br>
-Since our humble beginnings, our farmers' market stand has grown to offer several different types of scones, ranging from "very healthy" to "slightly healthy" - and of course, cow and flower-shaped sugar cookies in the "healthy schmealthy" category. We also offer dairy free and gluten free scones.
-</br>
-</br>
-Chris, Lori, Natalee, and Marinda
-</br>
-</br>
-
-
-<img src="../assets/img/family.jpg" alt="The Robson Family" style="width:600px;" align="center" class="image map">
-
-</p>
-
-</br>
-</br>
-
-</container>
-
-
-      <!-- FOOTER -->
-  <div class = "footer">
-    <h5>
-<!--       <a href="https://m.me/198694783507805"> <i class="fab fa-facebook-messenger fa-lg"></i></a> -->
-      <a href="https://www.facebook.com/Chris-Loris-Bakehouse-198694783507805/"> <i class="fab fa-facebook fa-lg"></i></a>
-    </h5>
-    <h5>&copy; 2023 Chris & Lori's Bakehouse.</h5>
-  </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-  </body>
 </html>

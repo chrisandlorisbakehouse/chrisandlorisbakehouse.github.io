@@ -11,14 +11,11 @@
 
     <script src="https://kit.fontawesome.com/d910c30dc1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat|Kalam:300|Quicksand|Permanent+Marker" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Caveat|Kalam:300|Quicksand|Permanent+Marker" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="../css/carousel.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 
@@ -38,28 +35,6 @@
   margin: auto;
 }
 
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  left: 0;
-  right:0;
-  top:0;
-  background: rgb(0, 0, 0);
-  background: rgba(255,255,255, 0.6); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 0px;
-  text-align: center;
-}
-
-.scone:hover .overlay {
-  opacity: 1;
-}
-
 .details {
   left: 100px;
   padding: 3%;
@@ -67,7 +42,6 @@
   margin-right: 8%;
   color:black;
 }
-
 
 p {
 font-size: 2rem;
@@ -78,40 +52,41 @@ a {
   color: black;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure at least 100% of the viewport height */
+  }
+
+  .footer {
+    background-color: #781e27;
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+
+  .footer .fab {
+    color: white;
+  }
+}
+
 </style>
 
-  </head>
-  <body>
+</head>
+<body>
 
      <nav class="navbar navbar-toggleable-sm bg-light">
-         <!-- Create the navbar -->
          <div class="navbar-header">
-            <!-- Create the navbar -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="glyphicon glyphicon-menu-hamburger"></span><span class="mobile-menu">Menu</span>
-            </button> <!-- Hamburger button for smaller devices -->
-            <a href="index.html" class="navbar-left navbar-brand"><img src="./assets/icon/hat.png"></a> <!-- Brand -->
+            </button>
+            <a href="index.html" class="navbar-left navbar-brand"><img src="./assets/icon/hat.png"></a>
          </div>
-         <!-- Collect the nav links, forms, and other content for toggling -->
          <div id="navbar" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
                   <a class="nav-link active" href="index.html">Home</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Farmers' Markets</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown01">
-                     <a class="dropdown-item" href="DCFM.html">
-                        <p class = "dropdowntext">Dane County Farmers' Market</p>
-                     </a>
-                     <a class="dropdown-item" href="WCM.html">
-                        <p class = "dropdowntext">Westside Community Market</p>
-                     </a>
-                  </div>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/products.html">Products</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="/about.html">About</a>
@@ -122,41 +97,26 @@ a {
             </ul>
          </div>
       </nav>
-
-<hr>
     <h1 class = "pagetitle" align="center">Contact Us</h1>
-<hr>
 <container>
 
-
-
-
 <p align="left" class="details">For inquiries, please email us at <a href="mailto:clbakehouse@gmail.com">clbakehouse@gmail.com</a>.
-</br>
-</br>
 
 </p>
-
-</br>
-</br>
 
 </container>
 
 
-      <!-- FOOTER -->
-  <div class = "footer">
-    <h5>
-      <a href="https://www.facebook.com/Chris-Loris-Bakehouse-198694783507805/"> <i class="fab fa-facebook fa-lg"></i></a>
-    </h5>
-    <h5>&copy; 2023 Chris & Lori's Bakehouse.</h5>
-  </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- FOOTER -->
+    <div class="footer">
+        <h5>
+            <a href="https://www.facebook.com/Chris-Loris-Bakehouse-198694783507805/"><i class="fab fa-facebook fa-lg"></i></a>
+        </h5>
+        <h5>&copy; 2024 Chris & Lori's Bakehouse.</h5>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
