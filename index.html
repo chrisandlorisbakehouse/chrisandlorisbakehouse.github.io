@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121211425-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -26,7 +25,12 @@
     <link href="../css/style.css" rel="stylesheet">
     <style>
         body {
-            display: flex;
+            background-color: white;
+            color: black;
+        }
+
+        display: { 
+          flex;
             flex-direction: column;
             min-height: 100vh;
             margin: 0;
@@ -45,19 +49,20 @@
         }
 
         .footer .fab {
-            color: white; /* Set the Facebook logo color to white */
+            color: white;
         }
 
         nav {
-            background-color: #781e27; /* Set the background color for the navigation area to darker burgundy */
+            background-color: #781e27;
+            color: white;
         }
 
         .navbar {
-            margin-bottom: 0; /* Remove default margin-bottom for the navbar */
+            margin-bottom: 0;
         }
 
         .navbar-light .navbar-nav .nav-link {
-            color: white; /* Set the color for the navigation links */
+            color: white;
         }
     </style>
 </head>
@@ -77,6 +82,9 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>                    
+                    <li class="nav-item">
                         <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
@@ -88,7 +96,7 @@
 
         <img src="../assets/img/farewell.png" alt="Chris & Lori's Bakehouse Farewell Year on the Square 2024" class="mx-auto">
     </div>
-
+</body>
     <!-- FOOTER -->
     <div class="footer">
         <h5>
@@ -96,12 +104,9 @@
         </h5>
         <h5>&copy; 2024 Chris & Lori's Bakehouse.</h5>
     </div>
-
-    <!-- Bootstrap core JavaScript and other scripts -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-</body>
+
 </html>

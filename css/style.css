@@ -27,10 +27,14 @@ body {
   border-radius: 0;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; /* Adjust this value to control the spacing around the logo */
+}
+
 .navbar-brand img {
-  width: 25%;
-  height: auto;
-  display: block;
+    max-height: 100%;
 }
 
 .navbar-nav .nav-link {
@@ -38,59 +42,12 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 2rem;
   margin: 20px;
-}
-
-.navbar-nav .nav-item.dropdown:hover > a,
-.navbar-nav .nav-item.dropdown:hover > a:hover,
-.navbar-nav .nav-item.dropdown:hover > a:focus {
-  background-color: pink;
-  color: green;
+  text-align: left;
 }
 
 .dropdown-menu {
   padding: 2%;
   z-index: 2000;
-}
-
-/* Carousel styles */
-.carousel-control-prev,
-.carousel-control-next {
-  top: 20%;
-  height: 30%;
-}
-
-.carousel-caption {
-  background-color: #1D0300;
-  border-radius: 12px;
-}
-
-.carousel-message {
-  font-family: 'Coustard', serif;
-  color: white;
-}
-
-@media (min-width: 576px) {
-  .carousel-message {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel-message {
-    font-size: 2.6rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .carousel-message {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .carousel-message {
-    font-size: 5rem;
-  }
 }
 
 /* Button styles */

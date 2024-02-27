@@ -25,7 +25,6 @@
 .container {
   position: relative;
   width: 90%;
-/*  max-width: 300px;*/
 }
 
 .image {
@@ -55,14 +54,14 @@ a {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure at least 100% of the viewport height */
+    min-height: 100vh;
   }
 
   .footer {
     background-color: #781e27;
     color: white;
     text-align: center;
-    margin-top: auto; /* Push the footer to the bottom */
+    margin-top: auto;
   }
 
   .footer .fab {
@@ -83,19 +82,22 @@ body {
             </button>
             <a href="index.html" class="navbar-left navbar-brand"><img src="./assets/icon/hat.png"></a>
          </div>
-         <div id="navbar" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                  <a class="nav-link active" href="index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="/about.html">About</a>
-               </li>
-               <li class="nav-item active">
-                  <a class="nav-link active" href="contact.html">Contact</a>
-               </li>
-            </ul>
-         </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
       </nav>
     <h1 class = "pagetitle" align="center">Contact Us</h1>
 <container>
@@ -106,7 +108,7 @@ body {
 
 </container>
 
-
+</body>
     <!-- FOOTER -->
     <div class="footer">
         <h5>
@@ -118,5 +120,5 @@ body {
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-</body>
+
 </html>
